@@ -5,11 +5,15 @@
   2018-2-5
 */
 
-// I don't know why, but the color isn't working for me :/
-
 // initiate variables
 const ctx = $('#slate')[0].getContext('2d');
 var dot = false;
+
+/*
+  =======================================================================
+                                  Functions
+  =======================================================================
+*/
 
 // toggle function
 const toggle = function(){
@@ -27,12 +31,14 @@ const draw = function(e){
   e.preventDefault();
   ctx.beginPath();
   if(dot){
-    ctx.fillstyle="#00ff00";
+    ctx.strokeStyle="#FF0000";
+    ctx.fillStyle="#FF0000";
     ctx.arc(e.offsetX - 5, e.offsetY - 5, 20, 0, 2 * Math.PI);
     ctx.fill();
     return;
   }
-  ctx.fillstyle="#ff0000";
+  ctx.strokeStyle="#00FF00";
+  ctx.fillStyle="#00FF00";
   ctx.fillRect(e.offsetX - 25 , e.offsetY - 25, 50, 50);
 }
 
