@@ -2,6 +2,7 @@
   Charles Weng
   SoftDev2 pd7
   K#00 -- I see a Red Door...
+  K#01 -- It's About CONNECTION
   2018-2-5
 */
 
